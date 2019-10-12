@@ -23,10 +23,13 @@ class Home extends Component {
 				</View>
 				<View style={styles.lowerHalf}>
 					<View style={styles.lowerHalf1}>
+						<View style={styles.title2}>
+              <Text style={styles.mydisciplines}>My disciplines</Text>
+              <Text style={styles.title2Number}>3</Text>
+						</View>
 						<MyDisciplines />
 					</View>
 					<View style={styles.lowerHalf2}>
-						<Card containerStyle={styles.card} />
 					</View>
 				</View>
 			</View>

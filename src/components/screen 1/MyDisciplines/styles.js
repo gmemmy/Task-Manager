@@ -6,10 +6,13 @@ const styles =  StyleSheet.create({
     borderRadius: 10,
     width: 350,
     height: 210,
+    shadowColor: '#0000',
+    marginTop: 20
   },
   cardHeader: {
     color: '#DE5F6E',
-    fontSize: 16
+    fontSize: 16,
+    fontWeight: 'bold'
   },
   upperContent: {
     flexDirection: 'row',
@@ -32,6 +35,22 @@ const styles =  StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#FFAF78',
   },
+  lowerContent: {
+    marginTop: 30,
+    alignItems: 'center'
+  },
+  locationText: {
+    color: '#D0D0D0',
+    marginRight: 175
+  },
+  progressCard: {
+    backgroundColor: '#FEF2F2',
+    borderRadius: 5,
+    width: 340,
+    height: 55,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
 
 export default styles;

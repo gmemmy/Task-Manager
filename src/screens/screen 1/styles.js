@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     flex: 0.53,
   },
   lowerHalf1: {
-    flex: 0.15,
+    flex: 0.57,
     backgroundColor: '#ff3c53',
     alignItems: 'center',
     justifyContent: 'center'
@@ -32,6 +32,21 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: 350,
     height: 210,
+  },
+  title2: {
+    flexDirection: 'row',
+   marginTop: 150
+  },
+  mydisciplines: {
+    color: 'white',
+    fontSize: 25,
+    fontWeight: 'bold',
+  },
+ title2Number: {
+    color: '#D51E33',
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginLeft: 145,
   },
 })
 

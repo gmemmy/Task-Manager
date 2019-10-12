@@ -13,7 +13,8 @@ class Header extends Component {
       <Fragment>
         	<Entypo
 					 name="dots-three-horizontal"
-					 size={27} color="white"
+					 size={27}
+					 color="white"
 					 style={styles.threeHorizontalDots} 
 					/>
 					<TouchableHighlight style={styles.touchableHighlight}>

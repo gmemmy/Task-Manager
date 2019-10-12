@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 162,
   },
-  checkBox: {
+  todo: {
     flex: 0.5,
     marginTop: 1
   },
@@ -27,16 +27,13 @@ const styles = StyleSheet.create({
     marginLeft: 40,
     marginTop: 5,
     width: 330,
-    borderWidth: 0
+    borderWidth: 0,
   },
   cardText: {
     color: 'white',
     fontSize: 18,
-    marginLeft: 40
-  },
-  title2: {
-    flexDirection: 'row',
-    marginTop: 10
+    marginRight: 60,
+    marginTop: 15
   },
   title2Number: {
     color: '#D51E33',
@@ -44,6 +41,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 145,
   },
+  checkbox: {
+    position: 'relative',
+  },
+  cardLayout: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  }
 })
 
 export default styles;
