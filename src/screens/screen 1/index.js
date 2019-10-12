@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import {
-	 View, Text, TouchableOpacity, Dimensions, TouchableHighlight
+	 View, Text
 	 } from 'react-native';
-import { Card } from 'react-native-elements';
 import styles from './styles';
-import cardStyles from '../../components/screen 1/MyDisciplines/styles';
 
 // Components
 import Header from '../../components/screen 1/header/index';

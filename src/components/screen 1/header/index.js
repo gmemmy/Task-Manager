@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import {
-	 View, Text, TouchableHighlight
+import {Text, TouchableHighlight
 	 } from 'react-native';
 import styles from './styles';
 
