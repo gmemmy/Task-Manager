@@ -13,7 +13,7 @@ class TaskDisplay extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Header />
+          <Header pressed={this.props.navigation} />
         </View>
         <View style={styles.content}>
           <Content />

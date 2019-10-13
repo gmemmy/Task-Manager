@@ -25,7 +25,7 @@ class Home extends Component {
             	<Text style={styles.mydisciplines}>My disciplines</Text>
             	<Text style={styles.title2Number}>3</Text>
 						</View>
-						<MyDisciplines />
+						<MyDisciplines pressed={this.props.navigation.navigate} />
 					</View>
 					<View style={styles.lowerHalf2}>
 					</View>

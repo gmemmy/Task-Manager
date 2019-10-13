@@ -12,7 +12,7 @@ class MyDisciplines extends Component {
   render() {
     return (
       <Fragment>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.pressed('TaskDisplay')}>
           <Card containerStyle={styles.card}>
             <View style={styles.upperContent}>
               <View>

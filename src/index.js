@@ -16,7 +16,11 @@ const AppContainer = createAppContainer(
       },
     },
     {
-      initialRoute: Home
+      initialRoute: Home,
+      headerMode: 'none',
+      navigationOptions: {
+          headerVisible: false,
+      }
     }
   )
 )

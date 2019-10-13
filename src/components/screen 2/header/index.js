@@ -11,7 +11,7 @@ class Header extends Component {
   render() {
     return (
       <Fragment>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.pressed.goBack()}>
           <AntDesign 
           name='arrowleft' 
           size={25}
