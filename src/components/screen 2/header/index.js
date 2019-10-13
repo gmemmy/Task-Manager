@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {
-	 View, Text
+	 View, Text, TouchableOpacity, TouchableOpacityComponent
 	 } from 'react-native';
 import styles from './styles';
 
@@ -11,12 +11,13 @@ class Header extends Component {
   render() {
     return (
       <Fragment>
-        <AntDesign 
-        name='arrowleft' 
-        size={25}
-        color='white'
-        style={styles.backArrow} />
-        
+        <TouchableOpacity>
+          <AntDesign 
+          name='arrowleft' 
+          size={25}
+          color='white'
+          style={styles.backArrow} />
+        </TouchableOpacity>    
         <Text style={styles.title}>My disciplines</Text>
         <Text style={styles.subTitle}>Ongoing treatment</Text>
       </Fragment>

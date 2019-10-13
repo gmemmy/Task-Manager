@@ -7,7 +7,8 @@ import TaskDisplay from './src/screens/screen 2/index';
 class App extends Component {
   render() {
     return (
-      <TaskDisplay />
+      <Home />
+      // <TaskDisplay />
         // <AppContainer />
     );
   }

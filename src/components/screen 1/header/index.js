@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import {Text, TouchableHighlight
+import {Text, TouchableHighlight, TouchableOpacity
 	 } from 'react-native';
 import styles from './styles';
 
@@ -10,12 +10,14 @@ class Header extends Component {
   render() {
     return (
       <Fragment>
-        	<Entypo
-					 name="dots-three-horizontal"
-					 size={27}
-					 color="white"
-					 style={styles.threeHorizontalDots} 
-					/>
+				<TouchableOpacity>
+					<Entypo
+						name="dots-three-horizontal"
+						size={27}
+						color="white"
+						style={styles.threeHorizontalDots} 
+						/>
+					</TouchableOpacity>
 					<TouchableHighlight style={styles.touchableHighlight}>
 						<MaterialCommunityIcons
 							name="infinity"
