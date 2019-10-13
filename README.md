@@ -1,5 +1,6 @@
 # Task-Manager
 This is a lightweight task manager template developed with react-native
+This app is live on - https://exp.host/@gmemmy/task-manager
 
 ## Get Started
 * Clone this repository.
