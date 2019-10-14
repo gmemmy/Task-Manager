@@ -2,8 +2,8 @@ import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 
 // Screens
-import Home from '../src/screens/screen 1/index';
-import TaskDisplay from '../src/screens/screen 2/index';
+import Home from './screens/screen1/index';
+import TaskDisplay from './screens/screen2/index';
 
 const AppContainer = createAppContainer(
   createStackNavigator(

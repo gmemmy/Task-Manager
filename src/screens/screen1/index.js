@@ -5,9 +5,9 @@ import {
 import styles from './styles';
 
 // Components
-import Header from '../../components/screen 1/header/index';
-import ToDoBox from '../../components/screen 1/ToDoBox/index';
-import MyDisciplines from '../../components/screen 1/MyDisciplines/index';
+import Header from '../../components/screen1/header/index';
+import ToDoBox from '../../components/screen1/ToDoBox/index';
+import MyDisciplines from '../../components/screen1/MyDisciplines/index';
 
 class Home extends Component {
 	render() {

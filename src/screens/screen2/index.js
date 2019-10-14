@@ -5,8 +5,8 @@ import {
 import styles from './styles';
 
 // Components
-import Header from '../../components/screen 2/header/index';
-import Content from '../../components/screen 2/items/index';
+import Header from '../../components/screen2/header/index';
+import Content from '../../components/screen2/items/index';
 
 class TaskDisplay extends Component {
   render() {
