@@ -6,12 +6,9 @@ import { Card, CheckBox } from 'react-native-elements';
 import styles from './styles';
 
 class ToDoBox extends Component {
-	constructor() {
-		super()
-		this.state = {
+		state = {
 			checked: false
 		}
-	}
 	pressed = () => {
 		const { checked } = this.state;
 		if(checked) {

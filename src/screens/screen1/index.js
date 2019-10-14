@@ -9,8 +9,7 @@ import Header from '../../components/screen1/header/index';
 import ToDoBox from '../../components/screen1/ToDoBox/index';
 import MyDisciplines from '../../components/screen1/MyDisciplines/index';
 
-class Home extends Component {
-	render() {
+const Home = ({ navigation }) => {
 		return (
 			<View style={styles.container}>
 				<View style={styles.upperHalf}>
@@ -25,14 +24,13 @@ class Home extends Component {
             	<Text style={styles.mydisciplines}>My disciplines</Text>
             	<Text style={styles.title2Number}>3</Text>
 						</View>
-						<MyDisciplines pressed={this.props.navigation.navigate} />
+						<MyDisciplines pressed={navigation} />
 					</View>
 					<View style={styles.lowerHalf2}>
 					</View>
 				</View>
 			</View>
 		)
-	}
 }
 
 export default Home

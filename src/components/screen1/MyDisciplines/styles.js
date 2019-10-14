@@ -50,6 +50,16 @@ const styles =  StyleSheet.create({
     height: 55,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  progressCardView: {
+    flexDirection: 'row', 
+    justifyContent: 'center', 
+    width: 314
+  },
+  progressCardViewText: {
+    fontSize: 15, 
+    fontWeight: 'bold',
+    marginTop: 15
   }
 });
 

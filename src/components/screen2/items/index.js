@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import {
 	 View, Text, TouchableHighlight, TouchableOpacity
    } from 'react-native';
@@ -8,8 +8,7 @@ import styles from './styles';
 // Icons
 import { Entypo, Feather, AntDesign } from '@expo/vector-icons';
 
-class Content extends Component {
-  render() {
+function Content() {
     return (
       <Fragment>
         <Card containerStyle={styles.firstCard}>
@@ -39,35 +38,17 @@ class Content extends Component {
                 CURRENT LOCATION
               </Text>
               <Card containerStyle={styles.progressCard}>
-                <View style={{ 
-                  flexDirection: 'row', 
-                  justifyContent: 'center', 
-                  width: 314
-                  }}>
-                  <Text style={{
-                    color: '#316EC4',
-                    fontSize: 15,
-                    fontWeight: 'bold',
-                    marginRight: 10
-                  }}>
+                <View style={styles.progressCardView}>
+                  <Text style={styles.progressCardText1}>
                     014
-                    </Text>
-                  <Text
-                  style={{ 
-                    fontSize: 15, 
-                    fontWeight: 'bold',
-                    color: '#316EC4',
-                    marginRight: 10
-                  }}>
+                  </Text>
+                  <Text style={styles.progressCardText2}>
                     Draw everyday challenge
                   </Text>
                   <AntDesign 
                   name='arrowright' 
                   size={25}
-                  style={{ 
-                    color: '#316EC4',
-                    marginLeft: 24
-                    }}/>
+                  style={styles.arrowIcon}/>
                 </View>
               </Card>
             </View>
@@ -93,35 +74,17 @@ class Content extends Component {
                 CURRENT LOCATION
               </Text>
               <Card containerStyle={styles.progressCard}>
-                <View style={{ 
-                  flexDirection: 'row', 
-                  justifyContent: 'center', 
-                  width: 314
-                  }}>
-                  <Text style={{
-                    color: '#316EC4',
-                    fontSize: 15,
-                    fontWeight: 'bold',
-                    marginRight: 10
-                  }}>
+                <View style={styles.progressCardView}>
+                  <Text style={styles.progressCardText1}>
                     014
-                    </Text>
-                  <Text
-                  style={{ 
-                    fontSize: 15, 
-                    fontWeight: 'bold',
-                    color: '#316EC4',
-                    marginRight: 10
-                  }}>
+                  </Text>
+                  <Text style={styles.progressCardText2}>
                     Draw everyday challenge
                   </Text>
                   <AntDesign 
                   name='arrowright' 
                   size={25}
-                  style={{ 
-                    color: '#316EC4',
-                    marginLeft: 24
-                    }}/>
+                  style={styles.arrowIcon}/>
                 </View>
               </Card>
             </View>
@@ -130,7 +93,6 @@ class Content extends Component {
        
       </Fragment>
     )
-  }
 }
 
 export default Content;

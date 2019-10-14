@@ -74,6 +74,27 @@ const styles = StyleSheet.create({
     height: 55,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  progressCardView: {
+    flexDirection: 'row', 
+    justifyContent: 'center', 
+    width: 314
+  },
+  progressCardText1: {
+    color: '#316EC4',
+    fontSize: 15,
+    fontWeight: 'bold',
+    marginRight: 10
+  },
+  progressCardText2: {
+    fontSize: 15, 
+    fontWeight: 'bold',
+    color: '#316EC4',
+    marginRight: 10
+  },
+  arrowIcon: {
+   color: '#316EC4',
+   marginLeft: 24
   }
 })
 

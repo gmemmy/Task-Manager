@@ -8,11 +8,10 @@ import styles from './styles';
 // Icons
 import { Feather, AntDesign } from '@expo/vector-icons'
 
-class MyDisciplines extends Component {
-  render() {
+const MyDisciplines = (props) => {
     return (
       <Fragment>
-        <TouchableOpacity onPress={() => this.props.pressed('TaskDisplay')}>
+        <TouchableOpacity onPress={() => props.pressed.navigate('TaskDisplay')}>
           <Card containerStyle={styles.card}>
             <View style={styles.upperContent}>
               <View>
@@ -32,17 +31,9 @@ class MyDisciplines extends Component {
                 CURRENT LOCATION
               </Text>
               <Card containerStyle={styles.progressCard}>
-                <View style={{ 
-                  flexDirection: 'row', 
-                  justifyContent: 'center', 
-                  width: 314
-                  }}>  
+                <View style={styles.progressCardView}>  
                   <Text
-                  style={{ 
-                    fontSize: 15, 
-                    fontWeight: 'bold',
-                    marginTop: 15
-                  }}>
+                  style={styles.progressCardViewText}>
                     Draw everyday challenge
                   </Text>
                   <Card containerStyle={{
@@ -50,9 +41,6 @@ class MyDisciplines extends Component {
                     marginTop: 5,
                     borderRadius: 20
                   }}>
-                    <View style={{ backgroundColor: 'red', flexDirection: 'row'}}>
-                      {/* <View /> */}<Text>Hello</Text>
-                    </View>
                   </Card>
                   <AntDesign 
                   name='arrowright' 
@@ -67,7 +55,6 @@ class MyDisciplines extends Component {
         </TouchableOpacity>
       </Fragment>
     )
-  }
 }
 
 export default MyDisciplines;

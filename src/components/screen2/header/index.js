@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import {
 	 View, Text, TouchableOpacity, TouchableOpacityComponent
 	 } from 'react-native';
@@ -7,11 +7,10 @@ import styles from './styles';
 // Icons
 import { AntDesign } from '@expo/vector-icons';
 
-class Header extends Component {
-  render() {
+const Header = (props) => {
     return (
       <Fragment>
-        <TouchableOpacity onPress={() => this.props.pressed.goBack()}>
+        <TouchableOpacity onPress={() => props.pressed.navigate('Home')}>
           <AntDesign 
           name='arrowleft' 
           size={25}
@@ -22,7 +21,6 @@ class Header extends Component {
         <Text style={styles.subTitle}>Ongoing treatment</Text>
       </Fragment>
     )
-  }
 }
 
 export default Header;

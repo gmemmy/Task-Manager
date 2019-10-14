@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import {Text, TouchableHighlight, TouchableOpacity
 	 } from 'react-native';
 import styles from './styles';
@@ -6,8 +6,7 @@ import styles from './styles';
 // Icons
 import { Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
 
-class Header extends Component {
-  render() {
+function Header() {
     return (
       <Fragment>
 				<TouchableOpacity>
@@ -29,7 +28,6 @@ class Header extends Component {
 					<Text style={styles.header}>Sasha Ruletik</Text>
       </Fragment>
     )
-  }
 }
 
 export default Header;
